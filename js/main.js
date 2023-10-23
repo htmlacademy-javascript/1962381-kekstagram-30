@@ -3,7 +3,6 @@ const imgUploadInput = document.getElementById('upload-file');
 const imgUploadOverlay = document.querySelector('.img-upload__overlay');
 const body = document.body;
 
-
 function showImageEditForm() {
     imgUploadOverlay.classList.remove('hidden');
     body.classList.add('modal-open');
@@ -74,6 +73,7 @@ imgUploadInput.addEventListener('change', () => {
 
 
 const imgUploadCancel = document.querySelector('.img-upload__cancel');
+
 imgUploadCancel.addEventListener('click', closeImageEditForm);
 
 
