@@ -22,8 +22,7 @@ imgUploadInput.addEventListener('change', () => {
 
   if (selectedImage) {
     // Display the selected image in the preview
-    const imageUrl = URL.createObjectURL(selectedImage);
-    imagePreview.src = imageUrl;
+    imagePreview.src = URL.createObjectURL(selectedImage);
     showImageEditForm();
   }
 });
@@ -36,19 +35,6 @@ document.addEventListener('keydown', (event) => {
     closeImageEditForm();
   }
 });
-
-imgUploadInput.addEventListener('change', () => {
-  const imagePreview = document.querySelector('.img-preview');
-  const selectedImage = imgUploadInput.files[0];
-
-  if (selectedImage) {
-    const imageUrl = URL.createObjectURL(selectedImage);
-
-    imagePreview.src = imageUrl;
-    showImageEditForm();
-  }
-});
-
 
 imgUploadCancel.addEventListener('click', closeImageEditForm);
 
