@@ -9,7 +9,6 @@ function showImageEditForm() {
   body.classList.add('modal-open');
 }
 
-
 function closeImageEditForm() {
   imgUploadOverlay.classList.add('hidden');
   body.classList.remove('modal-open');
